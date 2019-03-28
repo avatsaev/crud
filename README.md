@@ -219,7 +219,7 @@ _Example:_
 
 ### filter
 
-Adds fields request condition (multiple conditions) to you request.
+Adds fields request condition (multiple conditions) to your request.
 
 _Syntax:_
 
@@ -684,7 +684,7 @@ Or if your slug/id is just another random unique string, then:
 
 As you might guess, all request will add `companyId` to the DB queries alongside with the `:id` (or another field that you defined) of `GET`, `PATCH`, `DELETE` requests. On `POST` (both: one and bulk) requests, `companyId` will be added to the `dto` automatically.
 
-When you done with the controller, you'll need to add some logic to your `AuthGuard` or any other interface, where you do the authorization of a requester. You will need to match `companyId` URL param with the `user.companyId` entity that has been validated from the DB.
+When you done with the controller, you'll need to add some logic  `AuthGuard` or any other interface, where you do the authorization of a requester. You will need to match `companyId` URL param with the `user.companyId` entity that has been validated from the DB.
 
 ### Validation Options
 
